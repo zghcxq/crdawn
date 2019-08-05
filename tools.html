@@ -7,191 +7,31 @@
 	 <script type="text/javascript" src="js/moretext.js"></script>
 
 </head>
-<body bgcolor="">
+<body bgcolor=""  background = background.jpg >
 
 
-	<h1><font color ="black" size ="7">Tools List</font></h1>
+	<h1><font color ="black" size ="6">Tools</font> <font color ="red" size ="6">List</font></h1>
 	<hr/>
 <div>
 	<ol>
 	<li>
 
-	<span><font size=5 >ssr-linux-64</font></span>
+	<span><font size=5 >bash_tool</font></span>
 
 	<span id="switch" onclick="showdiv('show')"><a href="#">more</a></span>
 
 	<div id="show" style="display:none;">
  	<pre style="color:blue">
-https://github.com/zghcxq/linux-ssr-64.git
-
-#进入 linux-ssr-64/
-
-cd linux-ssr-64/
-
-安装混淆依赖
-
-sudo apt-get install build-essential
-
-wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
-
-tar zxf LATEST.tar.gz
-
-cd libsodium*
-
-./configure
-
-sudo make && sudo make install
-
-sudo chmod 777 /etc/ld.so.conf.d/usr_local_lib.conf
-
-echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
-
-ldconfig
-
-#进行初始化
-
-python3 main.py -i
+git clone https://github.com/zghcxq/bash_tool.git
 </pre>
  
 	</div>
 	</li>
-	<li>
-
-	<span><font size=5 >v2ray-linux-64</font></span>
-
-	<span id="switch" onclick="showdiv('show1')"><a href="#">more</a></span>
-
-	<div id="show1" style="display:none;">
- 	<pre style="color:blue">
-git clone https://github.com/zghcxq/v2ray-linux-64.git
-
-cd v2ray-linux-64/
-
-python3 main.py -i
-	</pre>
- 	</div>
-	</li>
-	</li>
-	<li>
-
-	<span><font size=5 >simplescreenrecorder</font></span>
-
-	<span id="switch" onclick="showdiv('show2')"><a href="#">more</a></span>
-
-	<div id="show2" style="display:none;">
- 	<pre style="color:blue">
-sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
-
-sudo apt-get update
-
-sudo apt-get install simplescreenrecorder
-	</pre>
- 
-	</div>
-	</li>
-	<li>
-
-	<span><font size=5 >chrome</font></span>
-
-	<span id="switch" onclick="showdiv('show3')"><a href="#">more</a></span>
-
-	<div id="show3" style="display:none;">
- 	<pre style="color:blue">
-sudo apt-get install libxss1 libappindicator1 libindicator7
-
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-sudo dpkg -i google-chrome*.deb
-
-sudo apt-get install -f
-	</pre>
- 
-	</div>
-	</li>
-	<li>
-
-	<span><font size=5 >git</font></span>
-
-	<span id="switch" onclick="showdiv('show4')"><a href="#">more</a></span>
-
-	<div id="show4" style="display:none;">
- 	<pre style="color:blue">
-ssh-keygen -t rsa -C "sungongpcd373@gmail.com" 
-
-cd ../.ssh
-ls
-sudo gedit id_rsa.pub
-
-git config --global user.name "zghcxq"
-git config --global user.email "sungongpcd373@gmail.com"
-
-	</pre>
- 
-	</div>
-	</li>
-	<li>
-
-	<span><font size=5 >ss-qt</font></span>
-
-	<span id="switch" onclick="showdiv('show5')"><a href="#">more</a></span>
-
-	<div id="show5" style="display:none;">
- 	<pre style="color:blue">
-1.$ sudo add-apt-repository ppa:hzwhuang/ss-qt5
-2.$ sudo apt-get update
-3.$ sudo apt-get install shadowsocks-qt5
-	</pre>
- 
-	</div>
-	</li>
-	<li>
-
-	<span><font size=5 >proxychains</font></span>
-
-	<span id="switch" onclick="showdiv('show6')"><a href="#">more</a></span>
-
-	<div id="show6" style="display:none;">
- 	<pre style="color:blue">
-1.安装proxychains
-
-sudo apt install proxychains
-
-2.配置proxychains
-
-sudo vim /etc/proxychains.conf
-
-将最后一行改成：
-
-socks5 127.0.0.1 1080
-
-3.proxychains使用
-
-proxychains wget https://www.google.com
-	</pre>
- 
-	</div>
-	</li>
-	<li>
-
-	<span><font size=5 >chromium</font></span>
-
-	<span id="switch" onclick="showdiv('show7')"><a href="#">more</a></span>
-
-	<div id="show7" style="display:none;">
- 	<pre style="color:blue">
-sudo add-apt-repository ppa:canonical-chromium-builds/stage
-sudo apt update
-sudo apt install chromium-browser
-	</pre>
- 
-	</div>
-	</li>
-
-	</ol>
+		</ol>
 </div>
 <div>
 
-<font size=4 ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" style="color:black">back</a></p></font>
+<font size=4 ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" style="color:blue">back</a></p></font>
 
 </div>	
 	
